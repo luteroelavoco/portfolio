@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Roboto&display=swap');
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}
+
+.Header strong{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+.Header ul{
+    margin-left: 30vw;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Header li{
+    margin-left: 20px;
+    display: inline;
+    cursor: pointer;
+    
+}
+.Header .active, .Header li:hover{
+    border-bottom: 2px solid #ffbd39;
+    padding-bottom: 5px;
+    transition-duration: 0.4s;
+}
+.Header .active{
+    color: #ffbd39;
+}
