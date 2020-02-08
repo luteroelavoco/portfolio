@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Poppins|Roboto&display=swap');
 
 .Header{
     display: flex;
@@ -6,7 +6,70 @@
     background-color: black;
     color: white;
     padding: 20px;
+    position: fixed;
+    width: 100%;
     
+}
+
+label{
+    margin-right: 50px;
+    color: white;
+    font-size: 16px;    
+    display: none;
+    margin-top: -25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    opacity: 0.5;
+    
+}
+
+.menu{
+    margin-right: 10vw;
+}
+label span{
+    padding-right: 2px;
+    font-size: 20px;
+}
+
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width:991px){
+  
+   .Header{
+        display: flex;
+        flex-direction: column;
+   }
+   .menu{
+       display: none;
+   }
+ .nav{
+     text-align: left;
+ }
+        label{
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    .menu a{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+    .Header .active, .Header a:hover{
+        border-bottom: 0px solid #ffbd39;
+        padding-bottom: 5px;
+        transition-duration: 0.4s;
+    }
+    
+
 }
 
 .Header strong{
@@ -14,19 +77,22 @@
     font-size: 20px;
 }
 
+
+.brand{
+    flex-grow: 1;
+}
 .Header ul{
-    margin-left: 30vw;
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
 
 .Header li{
-    margin-left: 20px;
+    margin-left: 2vw;
     display: inline;
     cursor: pointer;
     
 }
-.Header .active, .Header li:hover{
+.Header .active, .Header a:hover{
     border-bottom: 2px solid #ffbd39;
     padding-bottom: 5px;
     transition-duration: 0.4s;
