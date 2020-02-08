@@ -1,9 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;  
-}
 
-.App{
+.main{
     display: flex;
     flex-direction: column;
 }

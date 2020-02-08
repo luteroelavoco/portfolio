@@ -6,10 +6,11 @@ import Skills from "./Skills";
 import Projectos from "./Projectos";
 import Blog from "./Blog";
 import Contacto from "./Contacto";
+import './index.css';
 
 export default function Main (){
     return(
-        <>
+        <div className="main">
             <Inicio/>
             <Acerca/>
             <Resumo/>
@@ -17,6 +18,6 @@ export default function Main (){
             <Projectos/>
             <Blog/>
             <Contacto/>
-        </>
+        </div>
     )
 }

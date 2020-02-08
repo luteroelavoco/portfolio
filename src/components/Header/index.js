@@ -56,11 +56,13 @@ export default function Headers() {
     return (
         <div className="Header">
             <div className="brand">
-                <strong> CIENTISTA1</strong>
+                <a href="#"> CIENTISTA1</a>
+            </div>
+            <div className="toggle" >
+                 <label for="toggle"><span> &#9776;</span> <a>MENU</a> </label>
             </div>
             <div className="nav">
-                <label for="toggle"><span> &#9776;</span>MENU</label>
-                <input type="checkbox" id="toggle"></input>
+            <input type="checkbox" id="toggle"></input>
                 <div className="menu">
                     <ul>
                         {menus.map(item =>
@@ -72,7 +74,7 @@ export default function Headers() {
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
-                                    duration={800}
+                                    duration={600}
                                 >
                                     {item.title}
                                 </Link>
