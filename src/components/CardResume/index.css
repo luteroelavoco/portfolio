@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap');
+
+@media only screen and (max-width : 768px){
+    .card_resume {
+       margin-left: 4vw;
+       margin-right: 4vw;   
+    }
+}
+
+@media only screen and (max-width : 590px){
+    .card_resume {
+       margin-left: 1vw;
+       margin-right: 1vw;  
+    }
+}
+
+.CardResume {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+.card_resume{
+    padding-top: 20px;
+    padding-left: 20px;
+    background: #191919;
+    border-radius: 8px;
+}
+.card_resume strong{
+    color:  #ffbd39;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif; ;
+}
+
+.card_resume .school label{
+    color: white;
+    font-size: 24px;
+}
+
+.card_resume span{
+    color: white;
+    opacity: 0.6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.card_resume label{
+    margin-top: 10px;
+    color: #999999;
+    font-size: 16px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}

@@ -1,27 +1,35 @@
 import React, { useState } from 'react';
 import "./index.css";
+import Carrousel from "../../components/Carrousel";
+import imagem from "../../assets/fundo.png";
 export default function Inicio() {
-    const [interests, setInterests] = useState([
-        { id: 1, name: '#perucas', active: true },
-        { id: 2, name: '#unhas', active: false },
-        { id: 3, name: '#makup', active: false },
-        { id: 4, name: '#botique', active: false },
-        { id: 5, name: '#beleza', active: false },
-        { id: 6, name: '#saúde', active: false },])
-    
-    function selecionar(id){
-        const selecionados = interests.filter(item =>{
-            if(item.id == id)
-                item.active = !item.active;
-            return item;
-        })
-        setInterests(selecionados);
-    }
-    return (
+
+    const [slades, setSlades] = useState([
+        {
+            id:1,
+            active:true,
+            src : imagem,
+            title: "Titulo 1",
+            description :"Uma descrição simples"
+        },
+        {
+            id:2,
+            active:false,
+            src : "https://www.ab2l.org.br/wp-content/uploads/2017/11/noticias-microsoft-curso-ab2l.jpg",
+            title: "Titulo 2",
+            description :"Uma descrição simples"
+        },
+        {
+            id:3,
+            active:false,
+            src : imagem,
+            title: "Titulo 3",
+            description :"Uma descrição simples"
+        },
+    ])
+   return (
         <div className="inicio">
-            {interests.map(item =>
-                <label className={item.active ? "active":""}  onClick={()=>selecionar(item.id)} >{item.name}</label>
-            )}
+            <Carrousel slades={slades}/>
         </div>
     )
 }

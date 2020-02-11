@@ -42,12 +42,12 @@
    .Header{
        display: grid;
        grid-template-columns: 11fr 1fr;
-      
+       z-index: 1000;
    }
-   
    .menu{
        padding-top: 20px;
        display: none;
+      
    }
     .toggle label{
         display: flex;
@@ -69,14 +69,15 @@
 
     #toggle:checked + .menu{
         display: block;
+       
     }
-
 }
 
 .Header .brand a{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     color: white;
+    cursor: pointer;
     text-decoration: none;
     font-size: 24px;
 }
@@ -99,6 +100,6 @@
     border-bottom: 2px solid #ffbd39;
     padding-bottom: 5px;
 }
-.Header .nav .active{
+.Header .nav .active, .Header .nav .active:hover{
     color: #ffbd39;
 }

@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap');
+
 .resumo{
     width: 100%;
-    height: 400px;
+    grid: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    text-align: center;
     background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title strong{
+    color: white;
+    font-size: 50px;
+}
+
+.backtitle{
+   margin-top: -70px;
+}
+.resumo p{
+    color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.backtitle strong{
+    color: white;
+    font-size: 6vw;
+    opacity: 0.1;
+}
+
+.resumo .cards{
+    display: grid;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width : 690px){
+    .resumo p{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .resumo .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width : 590px){
+    .resumo .cards{
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
 }

@@ -52,14 +52,15 @@ export default function Headers() {
 
     ]);
 
+   
 
     return (
         <div className="Header">
             <div className="brand">
-                <a href="#"> CIENTISTA1</a>
+                <a onClick={()=>scroll.scrollToTop()}> CIENTISTA1</a>
             </div>
             <div className="toggle" >
-                 <label for="toggle"><span> &#9776;</span> <a>MENU</a> </label>
+                 <label for="toggle" ><span> &#9776;</span> <a>MENU</a> </label>
             </div>
             <div className="nav">
             <input type="checkbox" id="toggle"></input>
@@ -73,7 +74,7 @@ export default function Headers() {
                                     to={item.href}
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
+                                    offset={0}
                                     duration={600}
                                 >
                                     {item.title}
