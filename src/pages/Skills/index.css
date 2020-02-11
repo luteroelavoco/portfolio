@@ -1,5 +1,11 @@
 .skills{
-    width: 100%;
-    height: 400px;
+    padding-top: 200px;
+    
     background-color: orange;
+}
+
+.blanck{
+    width: 100px;
+    height: 300px;
+    background-color: aliceblue;
 }

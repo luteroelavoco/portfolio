@@ -1,12 +1,18 @@
 import React from 'react';
 import "./index.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import imagem from "../../assets/primary_foto.png";
 export default function Acerca() {
+    AOS.init();
     return (
         <div className="acerca">
             <div className="media">
-                <img src={imagem} class="mr-3" alt="..." />
-                <div className="media-body">
+                <img
+                 data-aos="fade-right" 
+                 data-aos-duration="2000"
+                src={imagem} class="mr-3" alt="..." />
+                <div className="media-body" data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="title">
                         <strong> Acerca de mim</strong>
                     </div>

@@ -1,8 +1,11 @@
 import React from 'react';
 import './index.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function CardResume() {
+    AOS.init();
     return (
-        <div className="CardResume">
+        <div data-aos="fade-up" data-aos-duration="2000" className="CardResume">
             <div className="card_resume">
                 <strong>2012-2014</strong>
                 <div className="school">
