@@ -14,7 +14,7 @@ export default function Acerca() {
                 src={imagem} class="mr-3" alt="..." />
                 <div className="media-body" data-aos="zoom-in-up" data-aos-duration="2000">
                     <div className="title">
-                        <strong> Acerca de mim</strong>
+                        <strong> Acerca</strong>
                     </div>
                     <div className="backtitle">
                         <strong >Acerca</strong>
