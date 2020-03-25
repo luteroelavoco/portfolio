@@ -1,11 +1,44 @@
 .skills{
-    padding-top: 200px;
-    
-    background-color: orange;
+    padding:150px 0 20px 0; 
+    text-align: center;
 }
 
-.blanck{
-    width: 100px;
-    height: 300px;
-    background-color: aliceblue;
+.skills p{
+    color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-weight: 300;
+    opacity: 0.5;
 }
+
+.listskills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 70px 0 90px;
+}
+
+
+.listskills .skillitem{
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.listskills .top{
+    width: 500px;
+}
+
+.listskills .item{
+    margin-right: 20px;
+}
+
+.listskills .skillitem .skillsubitem{
+    height: 12px;
+    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: yellow;
+}
+
+ 
