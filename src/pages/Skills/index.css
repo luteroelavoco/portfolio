@@ -1,5 +1,5 @@
 .skills{
-    padding:150px 0 20px 0; 
+    padding:80px 0 20px 0; 
     text-align: center;
 }
 
@@ -14,7 +14,7 @@
 .listskills{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 70px 0 90px;
+    padding: 0 40px 0 60px;
 }
 
 
@@ -22,15 +22,20 @@
     width: 100%;
     height: 12px;
     border-radius: 10px;
-    background-color: red;
+    background-color: #191919;
 }
 
 .listskills .top{
-    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .listskills .item{
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .listskills .skillitem .skillsubitem{
@@ -38,7 +43,12 @@
     border-radius: 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: yellow;
+    background-color: #FFBD39;
 }
 
- 
+@media only screen and (max-width: 768px){
+    .listskills {
+        display: flex;
+        flex-direction: column;
+    }
+}

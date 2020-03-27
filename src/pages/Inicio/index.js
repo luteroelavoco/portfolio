@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./index.css";
 import Carrousel from "../../components/Carrousel";
-import imagem from "../../assets/fundo.png";
+import imagem from "../../assets/imagem1.png";
 export default function Inicio() {
 
     const [slades, setSlades] = useState([
@@ -15,7 +15,7 @@ export default function Inicio() {
         {
             id:2,
             active:false,
-            src : "https://www.ab2l.org.br/wp-content/uploads/2017/11/noticias-microsoft-curso-ab2l.jpg",
+            src : imagem,
             title: "Titulo 2",
             description :"Uma descrição simples"
         },

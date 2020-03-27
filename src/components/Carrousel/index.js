@@ -17,8 +17,7 @@ export default function Carrousel({ slades }) {
                         <div className={item.active ? "carousel-item active" : "carousel-item"}>
                             <img src={item.src} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>{item.title}</h5>
-                                <p>{item.description}</p>
+                               
                             </div>
                         </div>
                     )}
