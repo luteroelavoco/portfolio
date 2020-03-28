@@ -7,31 +7,31 @@ export default function Skills() {
     const [skills, setSkils] = useState([
         {
             name: "C++",
-            value: "30%"
-        },
-        {
-            name: "PHP",
-            value: "30%"
-        },
-        {
-            name: "C#",
-            value: "40%"
-        },
-        {
-            name: "Java",
             value: "50%"
         },
         {
+            name: "PHP",
+            value: "50%"
+        },
+        {
+            name: "C#",
+            value: "60%"
+        },
+        {
+            name: "Java",
+            value: "90%"
+        },
+        {
             name: "Java Script",
-            value: "55%"
+            value: "90%"
         },
         {
             name: "CSS",
-            value: "55%"
+            value: "90%"
         },
         {
             name: "HTML",
-            value: "80%"
+            value: "99.9%"
         }
     ]);
 

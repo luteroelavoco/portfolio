@@ -23,7 +23,7 @@ export default function Acerca() {
                     <div className="biografia">
                         <div className="item">
                             <label> Nome :</label>
-                            <span style={{ marginLeft: '40px' }}> Lútero Elavoco</span>
+                            <span style={{ marginLeft: '40px' }}> Lútero J. J. Elavoco</span>
                         </div>
                         <div className="item">
                             <label>Nascimento :</label>
