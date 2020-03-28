@@ -14,3 +14,9 @@
     color: aqua;
     font-weight: bold;
 }
+
+@media only screen and (max-width : 768px){
+    .inicio{
+        display: none;
+    }
+}

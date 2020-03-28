@@ -68,7 +68,7 @@ export default function Headers() {
                     <ul>
                         {menus.map(item =>
 
-                            <li key={item.id}>
+                            <li key={item.id}  className = {item.id==1 ? "disablemenu" :""}>
                                 <Link
                                     activeClass="active"
                                     to={item.href}
